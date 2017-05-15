@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: SetupCyberFHD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 15:55+0100\n"
-"PO-Revision-Date: 2016-12-24 08:33+0100\n"
-"Last-Translator: vasilks <vasiliks@narod.ru>\n"
+"PO-Revision-Date: 2017-05-15 21:40+0300\n"
+"Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 2.0.1\n"
 
 msgid "10 Programs"
 msgstr "10 программ"
@@ -31,7 +31,7 @@ msgid "Background 3 color:"
 msgstr "Цвет фона 3:"
 
 msgid "Background transparent:"
-msgstr "Прозрачность фона"
+msgstr "Прозрачность фона:"
 
 msgid "Bold"
 msgstr "Жирный"
@@ -43,10 +43,7 @@ msgid "Buqet name in channel selection:"
 msgstr "Название букета в списке каналов:"
 
 msgid "Buqet name in radio channel selection:"
-msgstr "Название букета в списке радио:"
-
-msgid "Channel Selection"
-msgstr "Выбор Каналов"
+msgstr "Название букета в списке выбора радио:"
 
 msgid "Channel number in infobar:"
 msgstr "Номер канала в инфобаре:"
@@ -61,16 +58,19 @@ msgid "Cursor color:"
 msgstr "Цвет курсора:"
 
 msgid "Description panel in movie selection:"
-msgstr "Панель описания в виборе фильмов:"
+msgstr "Панель описания в списке видео записей:"
+
+msgid "Improved"
+msgstr "Модерн"
 
 msgid "Digital"
 msgstr "Цифровой"
 
 msgid "Do you want to restart the GUI now ?"
-msgstr "Ви хотите, перезапустить GUI сейчас?"
+msgstr "Вы действительно хотите выполнить рестарт GUI сейчас?"
 
 msgid "EPG panel in channel selection:"
-msgstr "EPG панель в списке каналов:"
+msgstr "EPG панель в списке выбора каналов:"
 
 msgid "EPG panel in secondinfobar:"
 msgstr "EPG панель во втором инфобаре:"
@@ -130,7 +130,7 @@ msgid "Now, Next"
 msgstr "Сейчас, Далее"
 
 msgid "Picon in channel selection:"
-msgstr "Пикон в списке каналов:"
+msgstr "Пикон в списке выбора каналов:"
 
 msgid "Progress color:"
 msgstr "Цвет прогресса:"
@@ -139,7 +139,7 @@ msgid "Progress mode:"
 msgstr "Режим прогресса:"
 
 msgid "Radio Selection"
-msgstr "Выбор Радио"
+msgstr "Список выбора радио"
 
 msgid "Regular"
 msgstr "Обычный"
@@ -174,7 +174,7 @@ msgstr ""
 "Разработчик: Sirius0103 \n"
 "Домашняя страница: www.gisclub.tv \n"
 "\n"
-"Помочь:\n"
+"Помощь:\n"
 "WMZ  Z395874509364\n"
 "WME  E284580190260\n"
 "WMR  R213063691482\n"
@@ -193,13 +193,37 @@ msgid "Title text color:"
 msgstr "Цвет текста заголовков:"
 
 msgid "Tuner panel in channel selection:"
-msgstr "Панель тюнера в списке каналов:"
+msgstr "Тюнер-панель в списке выбора каналов:"
 
 msgid "Tuner panel in infobar:"
-msgstr "Панель тюнера в инфобаре:"
+msgstr "Тюнер-панель в инфобаре:"
 
 msgid "Version skin:"
 msgstr "Версия скина:"
 
 msgid "Weather panel in secondinfobar:"
 msgstr "Панель погоды во втором инфобаре:"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "CI"
+msgstr "CI"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Channel Selection"
+msgstr "Список выбора каналов"
+
+msgid "NIM"
+msgstr "NIM"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Now"
+msgstr "Сейчас"
+
+msgid "PID"
+msgstr "PID"
