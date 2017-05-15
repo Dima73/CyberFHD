@@ -72,8 +72,6 @@
     <color name="green" value="#00008000" />
     <color name="red" value="#00ff0000" />
     <color name="transparent" value="#ffffffff" />
-    <color name="unaaaaaa" value="#00aaaaaa" />
-    <color name="uncccccc" value="#00cccccc" />
     <color name="white" value="#00ffffff" />
     <color name="yellow" value="#00ffff00" />
   </colors>
@@ -895,7 +893,7 @@
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="³" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Choose your Skin" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="Preview" position="870,380" size="280,210" alphatest="on" />
