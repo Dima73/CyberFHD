@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SetupCyberFHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-04 13:05+0300\n"
+"PO-Revision-Date: 2016-11-09 14:58+0200\n"
+"Last-Translator: vovan43<vovan43@ex.ua>\n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.10\n"
+
+msgid "10 Programs"
+msgstr "10 програм"
+
+msgid "Additional text color:"
+msgstr "Додатковий колір Тексту:"
+
+msgid "Analog"
+msgstr "Аналоговий"
+
+msgid "Background 1 color:"
+msgstr "Колір фону 1:"
+
+msgid "Background 2 color:"
+msgstr "Колір фону 2:"
+
+msgid "Background 3 color:"
+msgstr "Колір фону 3:"
+
+msgid "Background transparent:"
+msgstr "Прозорість Фону"
+
+msgid "Bold"
+msgstr "Напівжирний"
+
+msgid "BoldItalic"
+msgstr "Напівжирний курсив"
+
+msgid "Buqet name in channel selection:"
+msgstr "Назва букету у списку каналів:"
+
+msgid "Buqet name in radio channel selection:"
+msgstr "Назва букету і списку радіо:"
+
+msgid "Channel Selection"
+msgstr "Вибір Каналів"
+
+msgid "Channel number in infobar:"
+msgstr "Номер каналу в інфобарі:"
+
+msgid "Color setting:"
+msgstr "Налаштування кольорів:"
+
+msgid "Crypted panel in secondinfobar:"
+msgstr "Панель криптів в другому інфобарі:"
+
+msgid "Cursor color:"
+msgstr "Колір курсору:"
+
+msgid "Description panel in movie selection:"
+msgstr "Опис панель у виборі фільмів:"
+
+msgid "Digital"
+msgstr "Цифровий"
+
+msgid "Do you want to restart the GUI now ?"
+msgstr "Ви хочете, перезапустити GUI зараз ?"
+
+msgid "ECM"
+msgstr "Опис"
+
+msgid "EPG panel in channel selection:"
+msgstr "ЕПП панель в списку каналів:"
+
+msgid "EPG panel in secondinfobar:"
+msgstr "ЕПП панель в другому інфобарі:"
+
+msgid "Error by processing !!!"
+msgstr "Помилка при обробці !!!"
+
+msgid "Fonts"
+msgstr "Шрифти"
+
+msgid "Fonts:"
+msgstr "Шрифти:"
+
+msgid "Fonts: "
+msgstr "Шрифти: "
+
+msgid "Full Description"
+msgstr "Повний опис"
+
+msgid "Icon`s color:"
+msgstr "Колір Іконок:"
+
+msgid "Indication text color:"
+msgstr "Колір тексту Індикації:"
+
+msgid "Info panel in secondinfobar:"
+msgstr "Інфопанель в другому інфобарі:"
+
+msgid "Infobar"
+msgstr "Інфобар"
+
+msgid "Install components"
+msgstr "Встановити компоненти"
+
+msgid "Italic"
+msgstr "Курсив"
+
+msgid "Main text color:"
+msgstr "Колір тексту Меню:"
+
+msgid "Medium"
+msgstr "Середній"
+
+msgid "MediumItalic"
+msgstr "Середній курсив"
+
+msgid "Movie Infobar"
+msgstr "Інфобар фільмів"
+
+msgid "Movie Selection"
+msgstr "Вибір Фільмів"
+
+msgid "Now, 5 Programs"
+msgstr "Зараз, 5 програм"
+
+msgid "Now, Next"
+msgstr "Зараз, Далі"
+
+msgid "PID"
+msgstr "Крипти"
+
+msgid "Picon in channel selection:"
+msgstr "Пікон в списку каналів:"
+
+msgid "Progress color:"
+msgstr "Колір прогресу:"
+
+msgid "Progress mode:"
+msgstr "Режим прогресу:"
+
+msgid "Radio Selection"
+msgstr "Вибір Радіо"
+
+msgid "Regular"
+msgstr "Звичайний"
+
+msgid "Scrollbar in menu:"
+msgstr "Смуга прокрутки в меню:"
+
+msgid "Setup Cyber FHD"
+msgstr "Налаштування скіна"
+
+msgid "Setup CyberFHD"
+msgstr "Налаштування Скіна CyberFHD"
+
+msgid "Setup skin CyberFHD"
+msgstr "Налаштування скіна CyberFHD"
+
+msgid "SetupCyberFHD"
+msgstr "Налаштування Скіна CyberFHD"
+
+msgid "Short Description"
+msgstr "Короткий опис"
+
+msgid ""
+"Skin CyberFHD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"\n"
+"Donate:\n"
+"WMZ  Z395874509364\n"
+"WME  E284580190260\n"
+"WMR  R213063691482\n"
+"WMU  U658742613505"
+msgstr ""
+"Скін CyberFHD\n"
+"Розробник: Sirius0103 \n"
+"Домашня сторінка: www.gisclub.tv \n"
+"\n"
+"Допомогти:\n"
+"WMZ  Z395874509364\n"
+"WME  E284580190260\n"
+"WMR  R213063691482\n"
+"WMU  U658742613505"
+
+msgid "Standart"
+msgstr "Стандарт"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "Text transparent:"
+msgstr "Прозорість тексту:"
+
+msgid "Title text color:"
+msgstr "Колір тексту Назв:"
+
+msgid "Tuner panel in channel selection:"
+msgstr "Панель тюнера в списку каналів:"
+
+msgid "Tuner panel in infobar:"
+msgstr "Панель тюнера в інфобарі:"
+
+msgid "Version skin:"
+msgstr "Версія скіна:"
+
+msgid "Weather panel in secondinfobar:"
+msgstr "Панель Погоди в другому інфобарі:"
