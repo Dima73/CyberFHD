@@ -1,0 +1,205 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SetupCyberFHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-04 15:55+0100\n"
+"PO-Revision-Date: 2016-12-24 08:33+0100\n"
+"Last-Translator: vasilks <vasiliks@narod.ru>\n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+
+msgid "10 Programs"
+msgstr "10 программ"
+
+msgid "Additional text color:"
+msgstr "Дополнительный цвет текста:"
+
+msgid "Analog"
+msgstr "Аналоговый"
+
+msgid "Background 1 color:"
+msgstr "Цвет фона 1:"
+
+msgid "Background 2 color:"
+msgstr "Цвет фона 2:"
+
+msgid "Background 3 color:"
+msgstr "Цвет фона 3:"
+
+msgid "Background transparent:"
+msgstr "Прозрачность фона"
+
+msgid "Bold"
+msgstr "Жирный"
+
+msgid "BoldItalic"
+msgstr "Жирный курсив"
+
+msgid "Buqet name in channel selection:"
+msgstr "Название букета в списке каналов:"
+
+msgid "Buqet name in radio channel selection:"
+msgstr "Название букета в списке радио:"
+
+msgid "Channel Selection"
+msgstr "Выбор Каналов"
+
+msgid "Channel number in infobar:"
+msgstr "Номер канала в инфобаре:"
+
+msgid "Color setting:"
+msgstr "Настройки цветов:"
+
+msgid "Crypted panel in secondinfobar:"
+msgstr "Панель кодировок во втором инфобаре:"
+
+msgid "Cursor color:"
+msgstr "Цвет курсора:"
+
+msgid "Description panel in movie selection:"
+msgstr "Панель описания в виборе фильмов:"
+
+msgid "Digital"
+msgstr "Цифровой"
+
+msgid "Do you want to restart the GUI now ?"
+msgstr "Ви хотите, перезапустить GUI сейчас?"
+
+msgid "EPG panel in channel selection:"
+msgstr "EPG панель в списке каналов:"
+
+msgid "EPG panel in secondinfobar:"
+msgstr "EPG панель во втором инфобаре:"
+
+msgid "Error by processing !!!"
+msgstr "Ошибка при обработке !!!"
+
+msgid "Fonts"
+msgstr "Шрифты"
+
+msgid "Fonts:"
+msgstr "Шрифты:"
+
+msgid "Fonts: "
+msgstr "Шрифты: "
+
+msgid "Full Description"
+msgstr "Полное описание"
+
+msgid "Icon`s color:"
+msgstr "Цвет иконок:"
+
+msgid "Indication text color:"
+msgstr "Цвет текста индикации:"
+
+msgid "Info panel in secondinfobar:"
+msgstr "Инфопанель во втором инфобаре:"
+
+msgid "Infobar"
+msgstr "Инфобар"
+
+msgid "Install components"
+msgstr "Установить компоненты"
+
+msgid "Italic"
+msgstr "Курсив"
+
+msgid "Main text color:"
+msgstr "Цвет текста меню:"
+
+msgid "Medium"
+msgstr "Средний"
+
+msgid "MediumItalic"
+msgstr "Середний курсив"
+
+msgid "Movie Infobar"
+msgstr "Инфобар фильмов"
+
+msgid "Movie Selection"
+msgstr "Выбор фильмов"
+
+msgid "Now, 5 Programs"
+msgstr "Сейчас, 5 программ"
+
+msgid "Now, Next"
+msgstr "Сейчас, Далее"
+
+msgid "Picon in channel selection:"
+msgstr "Пикон в списке каналов:"
+
+msgid "Progress color:"
+msgstr "Цвет прогресса:"
+
+msgid "Progress mode:"
+msgstr "Режим прогресса:"
+
+msgid "Radio Selection"
+msgstr "Выбор Радио"
+
+msgid "Regular"
+msgstr "Обычный"
+
+msgid "Scrollbar in menu:"
+msgstr "Полоса прокрутки в меню:"
+
+msgid "Setup Cyber FHD"
+msgstr "Настройки скина"
+
+msgid "Setup CyberFHD"
+msgstr "Установки CyberFHD"
+
+msgid "Setup skin CyberFHD"
+msgstr "Настройка скина CyberFHD"
+
+msgid "Short Description"
+msgstr "Краткое описание"
+
+msgid ""
+"Skin CyberFHD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"\n"
+"Donate:\n"
+"WMZ  Z395874509364\n"
+"WME  E284580190260\n"
+"WMR  R213063691482\n"
+"WMU  U658742613505"
+msgstr ""
+"Скин CyberFHD\n"
+"Разработчик: Sirius0103 \n"
+"Домашняя страница: www.gisclub.tv \n"
+"\n"
+"Помочь:\n"
+"WMZ  Z395874509364\n"
+"WME  E284580190260\n"
+"WMR  R213063691482\n"
+"WMU  U658742613505"
+
+msgid "Standart"
+msgstr "Стандарт"
+
+msgid "Style"
+msgstr "Стиль"
+
+msgid "Text transparent:"
+msgstr "Прозрачность текста:"
+
+msgid "Title text color:"
+msgstr "Цвет текста заголовков:"
+
+msgid "Tuner panel in channel selection:"
+msgstr "Панель тюнера в списке каналов:"
+
+msgid "Tuner panel in infobar:"
+msgstr "Панель тюнера в инфобаре:"
+
+msgid "Version skin:"
+msgstr "Версия скина:"
+
+msgid "Weather panel in secondinfobar:"
+msgstr "Панель погоды во втором инфобаре:"
