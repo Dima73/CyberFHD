@@ -251,7 +251,7 @@ tunerpanelinfobar = [
 epgpanelinfobar = [
 	("TemplatesInfoBarTvInfoEPGNo", _("No")),
 	("TemplatesInfoBarTvInfoEPGNow", _("Now")),
-	("TemplatesInfoBarTvInfoEPGNext", _("Now, Next"))]
+	("TemplatesInfoBarTvInfoEPGFurther", _("Now, Next"))]
 cryptedpanelinfobar = [
 	("TemplatesInfoBarTvInfoCryptedNo", _("No")),
 	("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
