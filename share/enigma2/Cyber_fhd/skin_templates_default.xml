@@ -3945,7 +3945,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoEPGNext">
+  <screen name="TemplatesInfoBarTvInfoEPGFurther">
     <!-- Templates Info Bar Tv EPG -->
     <!-- Description Layer -->
     <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
