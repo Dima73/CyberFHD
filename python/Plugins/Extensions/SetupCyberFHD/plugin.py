@@ -52,7 +52,7 @@ def _(txt):
 	return t
 
 colorsetting = [
-	("0", _("Standart")),
+	("0", _("Standard")),
 	("1", _("Expert"))]
 
 styletransparent = [
