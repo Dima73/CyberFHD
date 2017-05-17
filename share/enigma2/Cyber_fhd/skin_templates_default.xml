@@ -3748,19 +3748,19 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="SD" position="600,1002" size="50,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-    <widget source="session.CurrentService" render="FixedLabel" text="SD" position="600,1002" size="50,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+    <eLabel text="SD" position="610,1002" size="50,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SD" position="610,1002" size="50,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">0,720</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="UHD" position="535,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-    <widget source="session.CurrentService" render="FixedLabel" text="HD" position="553,1002" size="50,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+    <eLabel text="UHD" position="525,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+    <widget source="session.CurrentService" render="FixedLabel" text="HD" position="543,1002" size="50,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="535,1002" size="70,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="525,1002" size="70,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">1981,3840</convert>
       <convert type="ConditionalShowHide" />
