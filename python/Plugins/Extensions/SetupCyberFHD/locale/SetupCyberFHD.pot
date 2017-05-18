@@ -1,0 +1,909 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-18 22:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: plugin.py:469 plugin.py:470 plugin.py:471 plugin.py:472 plugin.py:473
+#: plugin.py:474 plugin.py:475 plugin.py:476 plugin.py:477 plugin.py:478
+#: plugin.py:480 plugin.py:481 plugin.py:482 plugin.py:483 plugin.py:484
+#: plugin.py:485 plugin.py:486 plugin.py:487 plugin.py:488
+msgid " "
+msgstr ""
+
+#: plugin.py:59
+msgid "0%"
+msgstr ""
+
+#: plugin.py:288
+msgid "10 Programs"
+msgstr ""
+
+#: plugin.py:60
+msgid "10%"
+msgstr ""
+
+#: plugin.py:61
+msgid "20%"
+msgstr ""
+
+#: plugin.py:62
+msgid "30%"
+msgstr ""
+
+#: plugin.py:63
+msgid "40%"
+msgstr ""
+
+#: plugin.py:64
+msgid "50%"
+msgstr ""
+
+#: plugin.py:65
+msgid "60%"
+msgstr ""
+
+#: plugin.py:66
+msgid "70%"
+msgstr ""
+
+#: plugin.py:67
+msgid "80%"
+msgstr ""
+
+#: plugin.py:68
+msgid "90%"
+msgstr ""
+
+#: plugin.py:517
+msgid "Additional text color:"
+msgstr ""
+
+#: plugin.py:231
+msgid "AliceBlue"
+msgstr ""
+
+#: plugin.py:250
+msgid "Analog"
+msgstr ""
+
+#: plugin.py:223
+msgid "AntiqueWhite"
+msgstr ""
+
+#: plugin.py:160
+msgid "Aquamarine"
+msgstr ""
+
+#: plugin.py:232
+msgid "Azure"
+msgstr ""
+
+#: plugin.py:509
+msgid "Background 1 color:"
+msgstr ""
+
+#: plugin.py:510
+msgid "Background 2 color:"
+msgstr ""
+
+#: plugin.py:511
+msgid "Background 3 color:"
+msgstr ""
+
+#: plugin.py:521
+msgid "Background transparent:"
+msgstr ""
+
+#: plugin.py:226
+msgid "Beige"
+msgstr ""
+
+#: plugin.py:197
+msgid "Bisque"
+msgstr ""
+
+#: plugin.py:71 plugin.py:93
+msgid "Black"
+msgstr ""
+
+#: plugin.py:199
+msgid "BlanchedAlmond"
+msgstr ""
+
+#: plugin.py:73 plugin.py:108
+msgid "Blue"
+msgstr ""
+
+#: plugin.py:131
+msgid "BlueViolet"
+msgstr ""
+
+#: plugin.py:240
+msgid "Bold"
+msgstr ""
+
+#: plugin.py:243
+msgid "BoldItalic"
+msgstr ""
+
+#: plugin.py:174
+msgid "Brown"
+msgstr ""
+
+#: plugin.py:539
+msgid "Buqet name in channel selection:"
+msgstr ""
+
+#: plugin.py:546
+msgid "Buqet name in radio channel selection:"
+msgstr ""
+
+#: plugin.py:193
+msgid "BurlyWood"
+msgstr ""
+
+#: plugin.py:114
+msgid "CadetBlue"
+msgstr ""
+
+#: plugin.py:463
+msgid "Cancel"
+msgstr ""
+
+#: plugin.py:537
+msgid "Channel Selection"
+msgstr ""
+
+#: plugin.py:525
+msgid "Channel number in infobar:"
+msgstr ""
+
+#: plugin.py:168
+msgid "Chartreuse"
+msgstr ""
+
+#: plugin.py:202
+msgid "Chocolate"
+msgstr ""
+
+#: plugin.py:507
+msgid "Color setting:"
+msgstr ""
+
+#: plugin.py:203
+msgid "Coral"
+msgstr ""
+
+#: plugin.py:111
+msgid "CornflowerBlue"
+msgstr ""
+
+#: plugin.py:200
+msgid "Cornsilk"
+msgstr ""
+
+#: plugin.py:179
+msgid "Crimson"
+msgstr ""
+
+#: plugin.py:528
+msgid "Crypted panel in secondinfobar:"
+msgstr ""
+
+#: plugin.py:513
+msgid "Cursor color:"
+msgstr ""
+
+#: plugin.py:78 plugin.py:123
+msgid "Cyan"
+msgstr ""
+
+#: plugin.py:106
+msgid "DarkBlue"
+msgstr ""
+
+#: plugin.py:151
+msgid "DarkCyan"
+msgstr ""
+
+#: plugin.py:205
+msgid "DarkGoldenrod"
+msgstr ""
+
+#: plugin.py:87 plugin.py:99
+msgid "DarkGray"
+msgstr ""
+
+#: plugin.py:147
+msgid "DarkGreen"
+msgstr ""
+
+#: plugin.py:211
+msgid "DarkKhaki"
+msgstr ""
+
+#: plugin.py:128
+msgid "DarkMagenta"
+msgstr ""
+
+#: plugin.py:152
+msgid "DarkOliveGreen"
+msgstr ""
+
+#: plugin.py:207
+msgid "DarkOrange"
+msgstr ""
+
+#: plugin.py:129
+msgid "DarkOrchid"
+msgstr ""
+
+#: plugin.py:173
+msgid "DarkRed"
+msgstr ""
+
+#: plugin.py:189
+msgid "DarkSalmon"
+msgstr ""
+
+#: plugin.py:156
+msgid "DarkSeaGreen"
+msgstr ""
+
+#: plugin.py:133
+msgid "DarkSlateBlue"
+msgstr ""
+
+#: plugin.py:94
+msgid "DarkSlateGray"
+msgstr ""
+
+#: plugin.py:120
+msgid "DarkTurquoise"
+msgstr ""
+
+#: plugin.py:130
+msgid "DarkViolet"
+msgstr ""
+
+#: plugin.py:181
+msgid "DeepPink"
+msgstr ""
+
+#: plugin.py:113
+msgid "DeepSkyBlue"
+msgstr ""
+
+#: plugin.py:465
+msgid "Default"
+msgstr ""
+
+#: plugin.py:549
+msgid "Description panel in movie selection:"
+msgstr ""
+
+#: plugin.py:249
+msgid "Digital"
+msgstr ""
+
+#: plugin.py:85 plugin.py:97
+msgid "DimGray"
+msgstr ""
+
+#: plugin.py:720 plugin.py:726
+msgid "Do you want to restart the GUI now ?"
+msgstr ""
+
+#: plugin.py:112
+msgid "DodgerBlue"
+msgstr ""
+
+#: plugin.py:262
+msgid "ECM"
+msgstr ""
+
+#: plugin.py:542
+msgid "EPG panel in channel selection:"
+msgstr ""
+
+#: plugin.py:527
+msgid "EPG panel in secondinfobar:"
+msgstr ""
+
+#: plugin.py:717
+msgid "Error by processing !!!"
+msgstr ""
+
+#: plugin.py:56
+msgid "Expert"
+msgstr ""
+
+#: plugin.py:175
+msgid "FireBrick"
+msgstr ""
+
+#: plugin.py:227
+msgid "FloralWhite"
+msgstr ""
+
+#: plugin.py:502
+msgid "Fonts"
+msgstr ""
+
+#: plugin.py:504
+msgid "Fonts:"
+msgstr ""
+
+#: plugin.py:149
+msgid "ForestGreen"
+msgstr ""
+
+#: plugin.py:295
+msgid "Full Description"
+msgstr ""
+
+#: plugin.py:102
+msgid "Gainsboro"
+msgstr ""
+
+#: plugin.py:230
+msgid "GhostWhite"
+msgstr ""
+
+#: plugin.py:84 plugin.py:209
+msgid "Gold"
+msgstr ""
+
+#: plugin.py:206
+msgid "Goldenrod"
+msgstr ""
+
+#: plugin.py:86 plugin.py:98
+msgid "Gray"
+msgstr ""
+
+#: plugin.py:75 plugin.py:148
+msgid "Green"
+msgstr ""
+
+#: plugin.py:169
+msgid "GreenYellow"
+msgstr ""
+
+#: plugin.py:234
+msgid "Honeydew"
+msgstr ""
+
+#: plugin.py:183
+msgid "HotPink"
+msgstr ""
+
+#: plugin.py:519
+msgid "Icon`s color:"
+msgstr ""
+
+#: plugin.py:269
+msgid "Improved"
+msgstr ""
+
+#: plugin.py:186
+msgid "IndianRed"
+msgstr ""
+
+#: plugin.py:518
+msgid "Indication text color:"
+msgstr ""
+
+#: plugin.py:132
+msgid "Indigo"
+msgstr ""
+
+#: plugin.py:529
+msgid "Info panel in secondinfobar:"
+msgstr ""
+
+#: plugin.py:523
+msgid "Infobar"
+msgstr ""
+
+#: plugin.py:466
+msgid "Install components"
+msgstr ""
+
+#: plugin.py:241
+msgid "Italic"
+msgstr ""
+
+#: plugin.py:228
+msgid "Ivory"
+msgstr ""
+
+#: plugin.py:212
+msgid "Khaki"
+msgstr ""
+
+#: plugin.py:145
+msgid "Lavender"
+msgstr ""
+
+#: plugin.py:221
+msgid "LavenderBlush"
+msgstr ""
+
+#: plugin.py:167
+msgid "LawnGreen"
+msgstr ""
+
+#: plugin.py:217
+msgid "LemonChiffon"
+msgstr ""
+
+#: plugin.py:117
+msgid "LightBlue"
+msgstr ""
+
+#: plugin.py:187
+msgid "LightCoral"
+msgstr ""
+
+#: plugin.py:125
+msgid "LightCyan"
+msgstr ""
+
+#: plugin.py:216
+msgid "LightGoldenrodYellow"
+msgstr ""
+
+#: plugin.py:101
+msgid "LightGray"
+msgstr ""
+
+#: plugin.py:163
+msgid "LightGreen"
+msgstr ""
+
+#: plugin.py:139
+msgid "LightPink"
+msgstr ""
+
+#: plugin.py:190
+msgid "LightSalmon"
+msgstr ""
+
+#: plugin.py:155
+msgid "LightSeaGreen"
+msgstr ""
+
+#: plugin.py:115
+msgid "LightSkyBlue"
+msgstr ""
+
+#: plugin.py:96
+msgid "LightSlateGray"
+msgstr ""
+
+#: plugin.py:119
+msgid "LightSteelBlue"
+msgstr ""
+
+#: plugin.py:218
+msgid "LightYellow"
+msgstr ""
+
+#: plugin.py:76 plugin.py:166
+msgid "Lime"
+msgstr ""
+
+#: plugin.py:165
+msgid "LimeGreen"
+msgstr ""
+
+#: plugin.py:222
+msgid "Linen"
+msgstr ""
+
+#: plugin.py:266
+msgid "MSN"
+msgstr ""
+
+#: plugin.py:81 plugin.py:182
+msgid "Magenta"
+msgstr ""
+
+#: plugin.py:516
+msgid "Main text color:"
+msgstr ""
+
+#: plugin.py:79 plugin.py:172
+msgid "Maroon"
+msgstr ""
+
+#: plugin.py:239
+msgid "Medium"
+msgstr ""
+
+#: plugin.py:159
+msgid "MediumAquamarine"
+msgstr ""
+
+#: plugin.py:107
+msgid "MediumBlue"
+msgstr ""
+
+#: plugin.py:242
+msgid "MediumItalic"
+msgstr ""
+
+#: plugin.py:137
+msgid "MediumOrchid"
+msgstr ""
+
+#: plugin.py:136
+msgid "MediumPurple"
+msgstr ""
+
+#: plugin.py:154
+msgid "MediumSeaGreen"
+msgstr ""
+
+#: plugin.py:135
+msgid "MediumSlateBlue"
+msgstr ""
+
+#: plugin.py:161
+msgid "MediumSpringGreen"
+msgstr ""
+
+#: plugin.py:121
+msgid "MediumTurquoise"
+msgstr ""
+
+#: plugin.py:180
+msgid "MediumVioletRed"
+msgstr ""
+
+#: plugin.py:533
+msgid "Menu"
+msgstr ""
+
+#: plugin.py:104
+msgid "MidnightBlue"
+msgstr ""
+
+#: plugin.py:233
+msgid "MintCream"
+msgstr ""
+
+#: plugin.py:220
+msgid "MistyRose"
+msgstr ""
+
+#: plugin.py:214
+msgid "Moccasin"
+msgstr ""
+
+#: plugin.py:531
+msgid "Movie Infobar"
+msgstr ""
+
+#: plugin.py:547
+msgid "Movie Selection"
+msgstr ""
+
+#: plugin.py:261
+msgid "NIM"
+msgstr ""
+
+#: plugin.py:195
+msgid "NavajoWhite"
+msgstr ""
+
+#: plugin.py:72 plugin.py:105
+msgid "Navy"
+msgstr ""
+
+#: plugin.py:245 plugin.py:248 plugin.py:252 plugin.py:256 plugin.py:259
+#: plugin.py:265 plugin.py:271 plugin.py:275 plugin.py:278 plugin.py:281
+#: plugin.py:284 plugin.py:290 plugin.py:293
+msgid "No"
+msgstr ""
+
+#: plugin.py:253 plugin.py:285
+msgid "Now"
+msgstr ""
+
+#: plugin.py:287
+msgid "Now, 5 Programs"
+msgstr ""
+
+#: plugin.py:254 plugin.py:286
+msgid "Now, Next"
+msgstr ""
+
+#: plugin.py:224
+msgid "OldLace"
+msgstr ""
+
+#: plugin.py:82 plugin.py:157
+msgid "Olive"
+msgstr ""
+
+#: plugin.py:158
+msgid "OliveDrab"
+msgstr ""
+
+#: plugin.py:83 plugin.py:208
+msgid "Orange"
+msgstr ""
+
+#: plugin.py:177
+msgid "OrangeRed"
+msgstr ""
+
+#: plugin.py:140
+msgid "Orchid"
+msgstr ""
+
+#: plugin.py:263
+msgid "PID"
+msgstr ""
+
+#: plugin.py:213
+msgid "PaleGoldenrod"
+msgstr ""
+
+#: plugin.py:164
+msgid "PaleGreen"
+msgstr ""
+
+#: plugin.py:124
+msgid "PaleTurquoise"
+msgstr ""
+
+#: plugin.py:138
+msgid "PaleVioletRed"
+msgstr ""
+
+#: plugin.py:215
+msgid "PapayaWhip"
+msgstr ""
+
+#: plugin.py:198
+msgid "PeachPuff"
+msgstr ""
+
+#: plugin.py:204
+msgid "Peru"
+msgstr ""
+
+#: plugin.py:540
+msgid "Picon in channel selection:"
+msgstr ""
+
+#: plugin.py:142
+msgid "Pink"
+msgstr ""
+
+#: plugin.py:143
+msgid "Plum"
+msgstr ""
+
+#: plugin.py:118
+msgid "PowderBlue"
+msgstr ""
+
+#: plugin.py:512
+msgid "Progress color:"
+msgstr ""
+
+#: plugin.py:535
+msgid "Progress mode:"
+msgstr ""
+
+#: plugin.py:74 plugin.py:127
+msgid "Purple"
+msgstr ""
+
+#: plugin.py:544
+msgid "Radio Selection"
+msgstr ""
+
+#: plugin.py:80 plugin.py:176
+msgid "Red"
+msgstr ""
+
+#: plugin.py:238
+msgid "Regular"
+msgstr ""
+
+#: plugin.py:191
+msgid "RosyBrown"
+msgstr ""
+
+#: plugin.py:109
+msgid "RoyalBlue"
+msgstr ""
+
+#: plugin.py:184
+msgid "SaddleBrown"
+msgstr ""
+
+#: plugin.py:188
+msgid "Salmon"
+msgstr ""
+
+#: plugin.py:192
+msgid "SandyBrown"
+msgstr ""
+
+#: plugin.py:464
+msgid "Save"
+msgstr ""
+
+#: plugin.py:536
+msgid "Scrollbar in menu:"
+msgstr ""
+
+#: plugin.py:153
+msgid "SeaGreen"
+msgstr ""
+
+#: plugin.py:225
+msgid "Seashell"
+msgstr ""
+
+#: plugin.py:467
+msgid "Setup Cyber FHD"
+msgstr ""
+
+#: plugin.py:763
+msgid "Setup CyberFHD"
+msgstr ""
+
+#: plugin.py:764
+msgid "Setup skin CyberFHD"
+msgstr ""
+
+#: plugin.py:294
+msgid "Short Description"
+msgstr ""
+
+#: plugin.py:185
+msgid "Sienna"
+msgstr ""
+
+#: plugin.py:88 plugin.py:100
+msgid "Silver"
+msgstr ""
+
+#: plugin.py:757
+msgid ""
+"Skin CyberFHD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"\n"
+"Donate:\n"
+"WMZ  Z395874509364\n"
+"WME  E284580190260\n"
+"WMR  R213063691482\n"
+"WMU  U658742613505"
+msgstr ""
+
+#: plugin.py:116
+msgid "SkyBlue"
+msgstr ""
+
+#: plugin.py:134
+msgid "SlateBlue"
+msgstr ""
+
+#: plugin.py:95
+msgid "SlateGray"
+msgstr ""
+
+#: plugin.py:235
+msgid "Snow"
+msgstr ""
+
+#: plugin.py:162
+msgid "SpringGreen"
+msgstr ""
+
+#: plugin.py:55 plugin.py:268
+msgid "Standard"
+msgstr ""
+
+#: plugin.py:110
+msgid "SteelBlue"
+msgstr ""
+
+#: plugin.py:505
+msgid "Style"
+msgstr ""
+
+#: plugin.py:194
+msgid "Tan"
+msgstr ""
+
+#: plugin.py:77 plugin.py:150
+msgid "Teal"
+msgstr ""
+
+#: plugin.py:522
+msgid "Text transparent:"
+msgstr ""
+
+#: plugin.py:144
+msgid "Thistle"
+msgstr ""
+
+#: plugin.py:515
+msgid "Title text color:"
+msgstr ""
+
+#: plugin.py:178
+msgid "Tomato"
+msgstr ""
+
+#: plugin.py:541
+msgid "Tuner panel in channel selection:"
+msgstr ""
+
+#: plugin.py:526
+msgid "Tuner panel in infobar:"
+msgstr ""
+
+#: plugin.py:122
+msgid "Turquoise"
+msgstr ""
+
+#: plugin.py:490
+msgid "Version skin:"
+msgstr ""
+
+#: plugin.py:141
+msgid "Violet"
+msgstr ""
+
+#: plugin.py:530
+msgid "Weather panel in secondinfobar:"
+msgstr ""
+
+#: plugin.py:196
+msgid "Wheat"
+msgstr ""
+
+#: plugin.py:90 plugin.py:236
+msgid "White"
+msgstr ""
+
+#: plugin.py:89 plugin.py:229
+msgid "WhiteSmoke"
+msgstr ""
+
+#: plugin.py:210
+msgid "Yellow"
+msgstr ""
+
+#: plugin.py:170
+msgid "YellowGreen"
+msgstr ""
+
+#: plugin.py:246 plugin.py:257 plugin.py:272 plugin.py:276 plugin.py:279
+#: plugin.py:282 plugin.py:291
+msgid "Yes"
+msgstr ""
