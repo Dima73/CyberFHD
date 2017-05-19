@@ -4215,7 +4215,7 @@
       <convert type="ServicePosition">Length</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarMediaIndication">
+<screen name="TemplatesInfoBarMediaIndication">
     <panel name="TemplatesDownLayer3" />
     <!-- Templates Info Bar Media Indication-->
     <eLabel text="SUB" position="855,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
@@ -4238,11 +4238,6 @@
     <widget source="session.CurrentService" render="FixedLabel" text="HD" position="588,1002" size="50,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="570,1002" size="70,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">1981,3840</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="DMX" position="920,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
@@ -4683,5 +4678,12 @@
     <widget source="Service" render="Label" position="1115,570" size="715,240" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
       <convert type="MovieInfo">Description</convert>
     </widget>
+  </screen>
+  <screen name="TemplatesCacheFlushTvProgress">
+    <!-- Templates Cache Flush Tv Progress -->
+    <panel name="TemplatesInfoBarTvProgressLayer" />
+    <widget name="min_free_kb" position="435,900" size="800,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="right" transparent="1" />
+    <widget name="memory" position="435,955" size="800,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="right" transparent="1" />
+    <widget name="slide" render="Progress"  position="355,935" size="990,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
   </screen>
 </skin>

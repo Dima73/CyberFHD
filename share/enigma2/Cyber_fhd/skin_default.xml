@@ -6914,4 +6914,148 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
   </screen>
+ </screen>
+    <!-- RSSOverview -->
+    <screen name="RSSOverview" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1800Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Simple RSS Reader" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="info" render="Label" position="90,200" size="1740,35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="content" position="90,235" size="1740,500" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="summary" render="Label" position="90,735" size="1740,100" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <eLabel text="MENU" position="1505,100" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesClock" />
+    </screen>
+<!-- IpkgMain -->
+    <screen name="IpkgMain" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="INDB Ipk_creator" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="info" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+    <widget name="key_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="key_green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="key_blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+<!-- Cache Flush -->
+  <screen name="CacheFlushSetupMenu" position="0,0" size="1920,1080" title="Cache Flush" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesCacheFlushTvProgress" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Cache Flush Info Screen -->
+  <screen name="CacheFlushInfoScreen" position="0,0" size="1920,1080" title="CacheFlush Info" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesCacheFlushTvProgress" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <widget name="lmemtext"  position="110,205" size="200,620" font="Global; 19" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="lmemvalue"  position="310,205" size="200,620" font="Global; 19" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="rmemtext"  position="610,450" size="200,620" font="Global; 19" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="rmemvalue"  position="810,450" size="100,620" font="Global; 19" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="pfree" position="440,310" size="100,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="pused" position="440,710" size="100,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+<!-- NetworkWizard -->
+    <screen name="NetworkWizard" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Network Wizard" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="text" position="90,200" size="980,315" font="Global;22" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+    <widget source="list" render="Listbox" position="90,515" size="980,315" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <widget name="config" position="90,515" size="980,515" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <ePixmap pixmap="Cyber_fhd/wizard.png" position="1415,345" size="256,256" transparent="1" zPosition="10" alphatest="blend" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+<!-- AutoTimerWizard -->
+  <screen name="AutoTimerWizard" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Welcome..." position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="text" position="90,200" size="980,315" font="Global;22" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+    <widget source="list" render="Listbox" position="90,515" size="980,315" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <widget name="config" position="90,515" size="980,515" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <ePixmap pixmap="Cyber_fhd/wizard.png" position="1415,345" size="256,256" transparent="1" zPosition="10" alphatest="blend" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+<!-- ImageWizard -->
+  <screen name="ImageWizard" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Welcome..." position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="text" position="90,200" size="980,315" font="Global;22" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+    <widget source="list" render="Listbox" position="90,515" size="980,315" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <widget name="config" position="90,515" size="980,515" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <ePixmap pixmap="Cyber_fhd/wizard.png" position="1415,345" size="256,256" transparent="1" zPosition="10" alphatest="blend" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+<!-- MultiBootStartupOPT -->
+    <screen name="MultiBootStartupOPT" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="p" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="MultiBoot STARTUP Selector" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel name="a" position="90,200" size="980,635" transparent="-1" />
+    <eLabel name="b" position="90,200" size="980,635" transparent="-2" />
+    <widget source="Title" render="Label" position="90,200" size="980,150" halign="center" font="Global; 35" foregroundColor="yellow" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="config" render="Label" position="90,350" size="980,150" halign="center" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="options" render="Label" position="90,500" size="980,150" halign="center" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+    <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <eLabel text="Rename" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <eLabel text="INFO" position="1405,100" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
 </skin>
