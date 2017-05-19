@@ -735,7 +735,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.session.openWithCallback(extraAction, ChoiceBox, list=menu)
 
 	def afterLoadInstall(self, answer=None):
-		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+		self.save()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
