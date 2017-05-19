@@ -6874,7 +6874,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
   </screen>
- </screen>
     <!-- RSSOverview -->
     <screen name="RSSOverview" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
