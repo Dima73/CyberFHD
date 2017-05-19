@@ -907,3 +907,6 @@ msgstr ""
 #: plugin.py:282 plugin.py:291
 msgid "Yes"
 msgstr ""
+
+msgid "Update skin"
+msgstr ""

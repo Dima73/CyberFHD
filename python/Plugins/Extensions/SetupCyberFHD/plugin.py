@@ -25,6 +25,8 @@ from Components.ActionMap import ActionMap
 from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 from Components.Language import language
+from Screens.Console import Console
+from Screens.ChoiceBox import ChoiceBox
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
@@ -44,6 +46,8 @@ gettext.bindtextdomain("SetupCyberFHD", "%s%s" % (resolveFilename(SCOPE_PLUGINS)
 addFont("/usr/share/enigma2/Cyber_fhd/fonts/Neuropol.ttf", "STitles", 100, 1)
 addFont("/usr/share/enigma2/Cyber_fhd/fonts/LedCounter.ttf", "SIndication", 100, 1)
 addFont("/usr/share/enigma2/Cyber_fhd/fonts/Roboto-Regular.ttf", "SGlobal", 100, 1)
+
+loadScript = "/usr/lib/enigma2/python/Plugins/Extensions/SetupCyberFHD/install.sh"
 
 def _(txt):
 	t = gettext.dgettext("SetupCyberFHD", txt)
@@ -463,7 +467,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
 		self["key_yellow"] = StaticText(_("Default"))
-		self["key_blue"] = StaticText(_("Install components"))
+		self["key_blue"] = StaticText(_("Install"))
 		self["Title"] = StaticText(_("Setup Cyber FHD"))
 
 		self["bgcolor1a"] = Label(_(" "))
@@ -720,9 +724,17 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def install(self):
-		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
-		componentspath = "/usr/lib/enigma2/python/Components/"
+		menu = [(_("Install components"), "components"),(_("Update skin"), "skin")]
+		def extraAction(choice):
+			if choice:
+				if choice[1] == "components" or choice[1] == "skin":
+					os.system("chmod 755 %s" % loadScript)
+					cmd = "%s %s" % (loadScript, choice[1])
+					text = choice[1] == "components" and _("Install components") or _("Update skin")
+					self.session.openWithCallback(self.afterLoadInstall, Console, text, [cmd])
+		self.session.openWithCallback(extraAction, ChoiceBox, list=menu)
 
+	def afterLoadInstall(self, answer=None):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def setDefault(self, configItem):
