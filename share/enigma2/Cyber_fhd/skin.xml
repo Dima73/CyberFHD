@@ -6995,7 +6995,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
 <!-- MultiBootStartupOPT -->
-    <screen name="MultiBootStartupOPT" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="MultiBootStartupOPT" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7011,6 +7011,175 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="Rename" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="INFO" position="1405,100" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- SoftwareUpdateChanges -->
+  <screen name="SoftwareUpdateChanges" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1800Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Changelog" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="text" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ServiceInfoSimple -->
+  <screen name="ServiceInfoSimple" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Service info" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="infolist" position="90,200" size="980,635" selectionDisabled="1" font="Global; 22" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- TmbdYTTrailerList -->
+  <screen name="TmbdYTTrailerList" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="YT Trailer-List" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+       {"template": [
+       MultiContentEntryPixmapAlphaTest(pos=(0,0),
+       size=(100,72), png=3), # Thumbnail
+       MultiContentEntryText(pos=(110,1), size=(500,70),
+       font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
+       "fonts": [gFont("Global",20)],
+       "itemHeight": 72}
+       </convert>
+    </widget>
+    <widget name="thumbnail" position="0,0" size="100,72" />
+    <eLabel text="MENU" position="1505,100" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OscamInfoConfigScreen -->
+  <screen name="OscamInfoConfigScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Oscam Info - Configuration" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="config" position="90,200" size="980,435" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="status" position="90,635" size="980,200" font="Global; 25" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" shadowOffset="-1,-1" />
+    <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- oscInfo -->
+  <screen name="oscInfo" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <widget source="Title" render="Label" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="output" position="90,200" size="980,635" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- oscECMInfo -->
+  <screen name="oscECMInfo" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Show /tmp/ecm.info" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="output" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OscamInfoMenu -->
+  <screen name="OscamInfoMenu" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Oscam Info - Main Menu" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="mainmenu" position="90,200" size="980,635" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ShowSoftcamPackages -->
+  <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Install Softcams" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+       {"template": [
+          MultiContentEntryText(pos = (5, 1), size = (980, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+          MultiContentEntryText(pos = (5, 26), size = (980, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+          MultiContentEntryPixmapAlphaBlend(pos = (940, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+          MultiContentEntryPixmapAlphaBlend(pos = (5, 50), size = (980, 2), png = 5), # index 4 is the div pixmap
+          ],
+          "fonts": [gFont("Global", 22),gFont("Global", 14)],
+          "itemHeight": 52
+          }
+      </convert>
+    </widget>
+    <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <eLabel text="Install" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesHelpWindow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- YouTubeDownloadList -->
+  <screen name="YouTubeDownloadList" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="Y" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Active video downloads" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+         {"template": [
+        MultiContentEntryText(pos=(10,1), size=(330,22), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
+        MultiContentEntryText(pos=(490,1), size=(150,22), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
+        MultiContentEntryProgress(pos=(650,4), size=(230,22), percent=-3), # Progress
+        MultiContentEntryText(pos=(890,1), size=(80,22), font=0, flags=RT_HALIGN_LEFT, text=4), # Percentage
+        ],
+        "fonts": [gFont("Global",20)],
+        "itemHeight": 30}
+    </convert>
+    </widget>
+    <widget source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesHelpWindow" />
