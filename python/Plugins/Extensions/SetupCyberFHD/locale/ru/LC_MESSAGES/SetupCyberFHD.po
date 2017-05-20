@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: SetupCyberFHD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 15:55+0100\n"
-"PO-Revision-Date: 2017-05-19 22:46+0300\n"
+"PO-Revision-Date: 2017-05-20 22:51+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -230,3 +230,18 @@ msgstr "PID"
 
 msgid "Update skin"
 msgstr "Обновить скин"
+
+msgid "EPG panel - use runnning text:"
+msgstr "EPG панель - использовать прокрутку описания:"
+
+msgid "Install"
+msgstr "Установить"
+
+msgid "Tuner Info"
+msgstr "Инфо тюнера"
+
+msgid "Info"
+msgstr "Инфо"
+
+msgid "Menu"
+msgstr "Меню"

@@ -297,6 +297,10 @@ panelmovieselection = [
 	("TemplatesMovieSelectionDescriptionNo", _("No")),
 	("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 	("TemplatesMovieSelectionDescriptionFull", _("Full Description"))]
+extratranslation = [
+	("0", _("Tuner Info")),
+	("1", _("Info")),
+	("2", _("Menu"))]
 
 config.skin.cyber = ConfigSubsection()
 config.skin.cyber.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
@@ -334,6 +338,10 @@ config.skin.cyber.foregroundtransparent = ConfigSelection(default="0", choices =
 config.skin.cyber.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberNo", choices = numberchannel)
 config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerDigital", choices = tunerpanelinfobar)
 config.skin.cyber.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGNo", choices = epgpanelinfobar)
+config.skin.cyber.epgpanelinfobar_runningtext = ConfigYesNo(default=False)
+if not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDRunningText.py") and config.skin.cyber.epgpanelinfobar_runningtext.value:
+	config.skin.cyber.epgpanelinfobar_runningtext.value = False
+	config.skin.cyber.epgpanelinfobar_runningtext.save()
 config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedNo", choices = cryptedpanelinfobar)
 config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelNo", choices = infopanelinfobar)
 config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherNo", choices = weatherpanelinfobar)
@@ -349,6 +357,8 @@ config.skin.cyber.epgpanelchannelselection = ConfigSelection(default="TemplatesC
 config.skin.cyber.buqetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBuqetNo", choices = buqetradiochannelselection)
 
 config.skin.cyber.panelmovieselection = ConfigSelection(default="TemplatesMovieSelectionDescriptionShort", choices = panelmovieselection)
+
+config.skin.cyber.extra_translation = ConfigSelection(choices = extratranslation)
 
 SKIN_CYBER = """
 	<!-- Setup CyberFHD -->
@@ -529,6 +539,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Channel number in infobar:"), config.skin.cyber.numberchannel))
 		list.append(getConfigListEntry(_("Tuner panel in infobar:"), config.skin.cyber.tunerpanelinfobar))
 		list.append(getConfigListEntry(_("EPG panel in secondinfobar:"), config.skin.cyber.epgpanelinfobar))
+		if os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDRunningText.py"):
+			list.append(getConfigListEntry(_("EPG panel - use runnning text:"), config.skin.cyber.epgpanelinfobar_runningtext))
 		list.append(getConfigListEntry(_("Crypted panel in secondinfobar:"), config.skin.cyber.cryptedpanelinfobar))
 		list.append(getConfigListEntry(_("Info panel in secondinfobar:"), config.skin.cyber.infopanelinfobar))
 		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyber.weatherpanelinfobar))
@@ -694,7 +706,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# tuner panel
 			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sskin_templates.xml" % (config.skin.cyber.tunerpanelinfobar.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelinfobar.value, skinpath))
+			extra = ""
+			if os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDRunningText.py") and config.skin.cyber.epgpanelinfobar_runningtext.value and config.skin.cyber.epgpanelinfobar.value != "TemplatesInfoBarTvInfoEPGNo":
+				extra = "RunningText"
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelinfobar.value + extra, skinpath))
 	# crypted panel
 			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sskin_templates.xml" % (config.skin.cyber.cryptedpanelinfobar.value, skinpath))
 	# info panel

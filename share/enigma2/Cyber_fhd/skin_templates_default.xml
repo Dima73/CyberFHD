@@ -3969,6 +3969,45 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
+  <screen name="TemplatesInfoBarTvInfoEPGNowRunningText">
+    <!-- Templates Info Bar Tv EPG -->
+    <!-- Description Layer -->
+    <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="85,555" size="1260,280" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="10,555" size="70,280" backgroundColor="background2" zPosition="-10" />
+    <eLabel text="&gt;" position="90,520" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="120,520" size="1220,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="CyberFHDRunningText" position="90,560" size="1250,270" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" options="movetype=running,direction=top,step=1,steptime=100,always=0,startpoint=0,oneshot=5000,wrap">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoEPGFurtherRunningText">
+    <!-- Templates Info Bar Tv EPG -->
+    <!-- Description Layer -->
+    <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="85,555" size="1260,120" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="85,715" size="1260,120" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="10,555" size="70,120" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="10,715" size="70,120" backgroundColor="background2" zPosition="-10" />
+    <eLabel text="&gt;" position="90,520" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="120,520" size="1220,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="CyberFHDRunningText" position="90,560" size="1250,115" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" options="movetype=running,direction=top,step=1,steptime=100,always=0,startpoint=0,oneshot=5000,wrap">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <eLabel text="&gt;" position="90,680" size="30,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" halign="center" transparent="1" />
+    <widget source="session.Event_Next" render="Label" position="120,680" size="1220,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="CyberFHDRunningText" position="90,720" size="1250,115" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" options="movetype=running,direction=top,step=1,steptime=100,always=0,startpoint=0,oneshot=5000,wrap">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+  </screen>
   <screen name="TemplatesInfoBarTvInfoPanelNo">
     <!-- Templates Info Bar Tv Info -->
   </screen>
