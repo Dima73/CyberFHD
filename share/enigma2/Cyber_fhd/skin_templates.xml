@@ -4011,35 +4011,6 @@
   <screen name="TemplatesInfoBarTvInfoPanel">
     <!-- Templates Info Bar Tv Info -->
   </screen>
-  <screen name="TemplatesInfoBarTvInfoPanelCI">
-    <!-- Templates Info Bar Tv Info -->
-    <!-- CI Layer -->
-    <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
-    <eLabel position="1840,520" size="70,280" backgroundColor="background2" zPosition="-10" />
-    <!-- Crypted -->
-    <eLabel text="CI:" position="1380,525" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,525" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot1</convert>
-    </widget>
-    <eLabel text="CI:" position="1380,555" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,555" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot2</convert>
-    </widget>
-    <eLabel text="CI:" position="1380,585" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,585" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot3</convert>
-    </widget>
-    <eLabel text="CI:" position="1380,615" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot4</convert>
-    </widget>
-    <!-- ECM -->
-    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
-      <convert type="CamdInfo3">Camd</convert>
-    </widget>
-  </screen>
   <screen name="TemplatesInfoBarTvInfoPanelNIM">
     <!-- Templates Info Bar Tv Tuner -->
     <!-- ECM Layer -->
@@ -4178,6 +4149,155 @@
     <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceInfoEX">%txtpid</convert>
     </widget>
+    <!-- ECM -->
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+      <convert type="CamdInfo3">Camd</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoPanelNIMCiplus">
+    <!-- Templates Info Bar Tv Tuner -->
+    <!-- ECM Layer -->
+    <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,520" size="70,280" backgroundColor="background2" zPosition="-10" />
+    <!-- Tuner -->
+    <eLabel text="Position:" position="1380,525" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,525" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%O</convert>
+    </widget>
+    <eLabel text="Frequency:" position="1380,555" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,555" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%F</convert>
+    </widget>
+    <eLabel text="Polarization:" position="1380,585" size="170,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,585" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%p</convert>
+    </widget>
+    <eLabel text="Symbol rate:" position="1380,615" size="170,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%Y</convert>
+    </widget>
+    <eLabel text="Fec:" position="1380,645" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,645" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%f</convert>
+    </widget>
+    <eLabel text="Modulation:" position="1380,675" size="170,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,675" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%M</convert>
+    </widget>
+    <eLabel text="Rolloff:" position="1380,705" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,705" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%r</convert>
+    </widget>
+    <eLabel text="Pilot:" position="1380,735" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%o</convert>
+    </widget>
+    <eLabel text="System:" position="1380,765" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceName2">%s</convert>
+    </widget>
+    <!-- Ci -->
+    <widget source="session.CurrentService" render="CyberFHDCiModuleControl" allVisible="0" position="1375,465" size="460,50" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1"/>
+    <!-- ECM -->
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+      <convert type="CamdInfo3">Camd</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoPanelECMCiplus">
+    <!-- Templates Info Bar Tv Info -->
+    <!-- ECM Layer -->
+    <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,520" size="70,280" backgroundColor="background2" zPosition="-10" />
+    <!-- Crypted -->
+    <eLabel text="Source:" position="1380,525" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,525" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%O</convert>
+    </widget>
+    <eLabel text="Protocol:" position="1380,555" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,555" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%PR</convert>
+    </widget>
+    <eLabel text="Reader:" position="1380,585" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,585" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%R</convert>
+    </widget>
+    <eLabel text="Server:" position="1380,615" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%S</convert>
+    </widget>
+    <eLabel text="Port:" position="1380,645" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,645" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%SP</convert>
+    </widget>
+    <eLabel text="Provider:" position="1380,675" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,675" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%p</convert>
+    </widget>
+    <eLabel text="Caid:" position="1380,705" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,705" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%C</convert>
+    </widget>
+    <eLabel text="Pid:" position="1380,735" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%P</convert>
+    </widget>
+    <eLabel text="Time:" position="1380,765" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="CaidInfo2">%T</convert>
+    </widget>
+    <!-- Ci -->
+    <widget source="session.CurrentService" render="CyberFHDCiModuleControl" allVisible="0" position="1375,465" size="460,50" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1"/>
+    <!-- ECM -->
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+      <convert type="CamdInfo3">Camd</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoPanelPIDCiplus">
+    <!-- Templates Info Bar Tv Info -->
+    <!-- PID Layer -->
+    <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,520" size="70,280" backgroundColor="background2" zPosition="-10" />
+    <!-- Crypted -->
+    <eLabel text="APID:" position="1380,525" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,525" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%apid</convert>
+    </widget>
+    <eLabel text="VPID:" position="1380,555" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,555" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%vpid</convert>
+    </widget>
+    <eLabel text="SID:" position="1380,585" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,585" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%sid</convert>
+    </widget>
+    <eLabel text="ONID:" position="1380,615" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%onid</convert>
+    </widget>
+    <eLabel text="TSID:" position="1380,645" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,645" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%tsid</convert>
+    </widget>
+    <eLabel text="PRCPID:" position="1380,675" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,675" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%prcpid</convert>
+    </widget>
+    <eLabel text="PMTPID:" position="1380,705" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,705" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%pmtpid</convert>
+    </widget>
+    <eLabel text="TXTPID:" position="1380,735" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="ServiceInfoEX">%txtpid</convert>
+    </widget>
+    <!-- Ci -->
+    <widget source="session.CurrentService" render="CyberFHDCiModuleControl" allVisible="0" position="1375,465" size="460,50" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1"/>
     <!-- ECM -->
     <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="CamdInfo3">Camd</convert>

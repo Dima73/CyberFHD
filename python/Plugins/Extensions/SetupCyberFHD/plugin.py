@@ -37,6 +37,8 @@ from enigma import addFont
 import gettext
 import os
 
+VERSION = "21.05.2017"
+
 lang = language.getLanguage()
 environ["LANGUAGE"] = lang[:2]
 gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
@@ -261,7 +263,6 @@ cryptedpanelinfobar = [
 	("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
 infopanelinfobar = [
 	("TemplatesInfoBarTvInfoPanelNo", _("No")),
-#	("TemplatesInfoBarTvInfoPanelCI", _("CI")),
 	("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
 	("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
 	("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
@@ -344,6 +345,10 @@ if not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDRunni
 	config.skin.cyber.epgpanelinfobar_runningtext.save()
 config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedNo", choices = cryptedpanelinfobar)
 config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelNo", choices = infopanelinfobar)
+config.skin.cyber.infopanelinfobar_ci = ConfigYesNo(default=False)
+if not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDCiModuleControl.py") and config.skin.cyber.infopanelinfobar_ci.value:
+	config.skin.cyber.infopanelinfobar_ci.value = False
+	config.skin.cyber.infopanelinfobar_ci.save()
 config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherNo", choices = weatherpanelinfobar)
 
 config.skin.cyber.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
@@ -543,6 +548,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			list.append(getConfigListEntry(_("EPG panel - use runnning text:"), config.skin.cyber.epgpanelinfobar_runningtext))
 		list.append(getConfigListEntry(_("Crypted panel in secondinfobar:"), config.skin.cyber.cryptedpanelinfobar))
 		list.append(getConfigListEntry(_("Info panel in secondinfobar:"), config.skin.cyber.infopanelinfobar))
+		if os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDCiModuleControl.py"):
+			list.append(getConfigListEntry(_("Info panel - show CI:"), config.skin.cyber.infopanelinfobar_ci))
 		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyber.weatherpanelinfobar))
 		section = _("Movie Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
@@ -660,24 +667,25 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			pass
 
 	def infosk(self):
-		package = 0
-		global status
-		if fileExists("/usr/lib/opkg/status"):
-			status = "/usr/lib/opkg/status"
-		elif fileExists("/var/lib/opkg/status"):
-			status = "/var/lib/opkg/status"
-		elif fileExists("/var/opkg/status"):
-			status = "/var/opkg/status"
-		for line in open(status):
-			if line.find("cyber-hd") > -1:
-				package = 1
-			if line.find("Version:") > -1 and package == 1:
-				package = 0
-				try:
-					self["info_sk"].text = line.split()[1]
-				except:
-					self["info_sk"].text = " "
-				break
+		self["info_sk"].text = VERSION
+		#package = 0
+		#global status
+		#if fileExists("/usr/lib/opkg/status"):
+		#	status = "/usr/lib/opkg/status"
+		#elif fileExists("/var/lib/opkg/status"):
+		#	status = "/var/lib/opkg/status"
+		#elif fileExists("/var/opkg/status"):
+		#	status = "/var/opkg/status"
+		#for line in open(status):
+		#	if line.find("cyber-hd") > -1:
+		#		package = 1
+		#	if line.find("Version:") > -1 and package == 1:
+		#		package = 0
+		#		try:
+		#			self["info_sk"].text = line.split()[1]
+		#		except:
+		#			self["info_sk"].text = " "
+		#		break
 
 	def createSkin(self):
 		skinpath = "/usr/share/enigma2/Cyber_fhd/"
@@ -713,7 +721,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# crypted panel
 			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sskin_templates.xml" % (config.skin.cyber.cryptedpanelinfobar.value, skinpath))
 	# info panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sskin_templates.xml" % (config.skin.cyber.infopanelinfobar.value, skinpath))
+			extra = ""
+			if os.path.exists("/usr/lib/enigma2/python/Components/Renderer/CyberFHDCiModuleControl.py") and config.skin.cyber.infopanelinfobar_ci.value and config.skin.cyber.infopanelinfobar.value != "TemplatesInfoBarTvInfoPanelNo":
+				extra = "Ciplus"
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sskin_templates.xml" % (config.skin.cyber.infopanelinfobar.value + extra, skinpath))
 	# weather panel
 			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sskin_templates.xml" % (config.skin.cyber.weatherpanelinfobar.value, skinpath))
 	# progress
