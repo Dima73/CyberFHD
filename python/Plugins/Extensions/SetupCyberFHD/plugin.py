@@ -32,15 +32,14 @@ from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigLi
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
 from skin import parseColor, parseFont
-from os import system, environ
 from enigma import addFont
 import gettext
 import os
 
-VERSION = "21.05.2017"
+VERSION = "24.05.2017"
 
 lang = language.getLanguage()
-environ["LANGUAGE"] = lang[:2]
+os.environ["LANGUAGE"] = lang[:2]
 gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain("enigma2")
 gettext.bindtextdomain("SetupCyberFHD", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/SetupCyberFHD/locale"))
