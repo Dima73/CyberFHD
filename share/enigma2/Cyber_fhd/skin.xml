@@ -7310,4 +7310,58 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- NumberZapExt -->
+  <screen name="NumberZapExt" position="center,center" size="700,165" title="" zPosition="99">
+    <eLabel position="center,center" size="700,165" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="2,2" size="696,161" backgroundColor="background1" zPosition="-11" />
+    <widget name="chPicon" position="463,17" size="220,132" alphatest="on" transparent="1" />
+    <widget name="number" position="15,18" size="122,37" halign="left" font="Global; 26" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget name="chNum" position="137,18" size="308,37" halign="left" font="Global; 26" transparent="1" foregroundColor="yellow" backgroundColor="background" />
+    <widget name="channel" position="15,68" size="122,36" halign="left" font="Global; 26" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget name="chName" position="137,68" size="308,36" halign="left" font="Global; 26" noWrap="1" transparent="1" foregroundColor="yellow" backgroundColor="background" />
+    <widget name="bouquet" position="15,117" size="122,36" halign="left" font="Global; 26" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget name="chBouq" position="137,117" size="308,36" halign="left" font="Global; 26" noWrap="1" transparent="1" foregroundColor="yellow" backgroundColor="background" />
+  </screen>
+  <!-- get_epg_dat -->
+  <screen name="get_epg_dat" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- get_epg_data -->
+  <screen name="get_epg_data" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- start_cam -->
+  <screen name="start_cam" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- restart_cam -->
+    <screen name="restart_cam" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- stop_cam -->
+  <screen name="stop_cam" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- create_swap -->
+  <screen name="create_swap" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
+  <!-- update_current_time -->
+  <screen name="update_current_time" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="status" render="Label" position="center,center" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" transparent="2" />
+    <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
 </skin>
