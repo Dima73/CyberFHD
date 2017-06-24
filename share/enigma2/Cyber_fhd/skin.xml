@@ -7877,5 +7877,62 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsMenu" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
-   </screen>
+  </screen>
+  <!-- ########## Open Multiboot ########## -->
+  <!-- OMB Manager List -->
+  <screen name="OMBManagerList" position="0,0" size="1920,1080" title="openMultiboot Manager" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="p" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="label1" position="90,245" size="980,45" halign="center" font="Global; 35" foregroundColor="color1" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="label2" position="90,415" size="980,40" halign="center" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="nextboot" position="90,585" size="980,40" halign="center" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="key_ok" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtonsInfo" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OMB Manager Install -->
+  <screen name="OMBManagerInstall" position="0,0" size="1920,1080" title="openMultiboot Install" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="p" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="info" position="90,245" size="980,45" halign="center" font="Global; 35" foregroundColor="color1" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget source="list" render="Listbox" position="90,415" size="980,220" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OMB Manager About -->
+  <screen name="OMBManagerAbout" position="0,0" size="1920,1080" title="openMultiboot About" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="about" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
 </skin>
