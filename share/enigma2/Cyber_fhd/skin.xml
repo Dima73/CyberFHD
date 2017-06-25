@@ -7935,4 +7935,17 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="about" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- ########## PiP Setup ########## -->
+  <!-- PiP Setup -->
+  <screen name="PiPSetup" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="center,center" size="980,280" backgroundColor="background3" zPosition="2" />
+    <eLabel position="center,center" size="976,276" backgroundColor="background1" zPosition="2" />
+    <widget name="text" position="center,center" size="980,240" font="Global; 25" halign="center" valign="center" zPosition="3" backgroundColor="background3" transparent="1" />
+  </screen>
+  <!-- PiP Zapping -->
+  <screen name="PictureInPictureZapping" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel text="PiP-Zap" position="50,54" size="700,40" zPosition="3" font="Global; 35" backgroundColor="background3" halign="center" valign="center" transparent="2" />
+    <eLabel position="50,50" size="710,54" backgroundColor="background3" zPosition="2" />
+    <eLabel position="52,52" size="706,50" backgroundColor="background1" zPosition="2" />
+  </screen>
 </skin>
