@@ -4590,13 +4590,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <!-- Quick Menu -->
   <screen name="QuickMenu" position="0,0" size="1920,1080" title="Quick Launch Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
-    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
     <eLabel text="Quick Launch Menu" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <widget name="sublist" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="list" position="90,200" size="861,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <eLabel position="960,200" size="2,635" backgroundColor="background3" zPosition="1" />
+    <widget name="sublist" position="971,200" size="861,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
@@ -7404,6 +7405,19 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="center,center" size="710,54" backgroundColor="background3" zPosition="2" />
     <eLabel position="center,center" size="706,50" backgroundColor="background1" zPosition="2" />
   </screen>
+  <!-- Add Record -->
+  <screen name="AddRecord" position="0,0" size="1920,1080" title="add record" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## IPTV Player ########## -->
   <!-- IPTVSetupMainWidget -->
   <screen name="IPTVSetupMainWidget" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
@@ -7935,6 +7949,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="nextboot" position="90,585" size="980,40" halign="center" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="list" render="Listbox" position="90,635" size="980,315" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
     <widget name="key_ok" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
